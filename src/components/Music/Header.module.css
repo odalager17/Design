@@ -1,0 +1,118 @@
+
+.header {
+  background: linear-gradient(to right, var(--primario), var(--secundario));
+	width: 85%;
+	height: 10vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 3rem;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+}
+
+.headerBG {
+	background: var(--fondo);
+}
+
+.header .contSearch {
+	/* background: #000; */
+	width: 20%;
+	height: 2.5rem;
+	display: flex;
+	flex-direction: row;
+}
+
+.header .contSearch .icon {
+	/* background: #a5da2a; */
+	width: 10%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	color: var(--terciario);
+	font-size: .8rem;
+}
+
+.header .contSearch .input {
+	background: transparent;
+	width: 90%;
+	height: 100%;
+	border: none;
+	color: var(--terciario);
+	font-size: .9rem;
+}
+
+.header .contSearch .input::-webkit-input-placeholder {
+	color: var(--terciario);
+}
+
+.contProfile {
+	/* background: #df2525; */
+	width: fit-content;
+	height: 2.5rem;
+	display: flex;
+	flex-direction: row;
+}
+
+.contProfile .notification {
+	/* background: #2bf024; */
+	width: 2.5rem;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.contProfile .notification .icon {
+	color: var(--terciario);
+	cursor: pointer;
+}
+
+.contProfile .notification .accountant {
+	background: #f00;
+	width: .5rem;
+	height: .5rem;
+	border-radius: 50%;
+	position: absolute;
+	top: 30%;
+	right: 30%;
+}
+
+.contProfile .profile {
+	/* background: #df24f0; */
+	width: 4rem;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.contProfile .profile .contImage {
+	/* background: #c8e620; */
+	width: 2.5rem;
+	height: 100%;
+}
+
+.contProfile .profile .contImage .image {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+.contProfile .profile .icon {
+	/* background: #41e620; */
+	width: 1.5rem;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--terciario);
+	transition: all 1s ease;
+}
+
+.contProfile .profile:hover .icon {
+	color: var(--fondo);
+}

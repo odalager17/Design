@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background: #e24040;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: sans-serif;
+}
+
+.chart {
+  background: #0d0235;
+  /* width: 90%; */
+  /* height: 80%; */
+  border-radius: 1rem;
+  box-shadow: 0 0 10px 0 #9b9b9b80;
+}
+
+.print {
+  background: #c49afc;
+  width: 216mm;
+  height: 278mm;
+  padding: 2.5cm 2cm;
+}

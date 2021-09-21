@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import Prueba from "./components/Pruebas";
+import Charts from "./components/Charts";
+
+//Tec
+import Home from "./components/Tec/Home";
+
+//music
+import Music from "./components/Music/Home";
+
+import { BrowserRouter as Router, Switch } from "react-router-dom";
+import { NoUserRoutes } from "./routeCheckers";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Switch>
+          <NoUserRoutes exact path="/" component={Home} />
+        </Switch>
+        <Switch>
+          <NoUserRoutes exact path="/Charts" component={Charts} />
+        </Switch>
+        <Switch>
+          <NoUserRoutes exact path="/Music" component={Music} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

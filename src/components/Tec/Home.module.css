@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+:root {
+  --primario: #ff631b;
+  --secundario: #01033d;
+  --terciario: #ffffff;
+  --cuarto: #969696;
+
+  --fondo: #f7f6f6;
+  --correcto: #03b830;
+  --error: #fd4141;
+
+  --fondoDark: #01033d;
+  --blueGradiente: #418af8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  background: var(--fondo);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.container .contMenu {
+  /* background: var(--terciario); */
+  width: 18%;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.container .contPrincipal {
+  /* background: #c2b508; */
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 1rem 0;
+}
+
+.container .contPrincipal .contHeader {
+  /* background: #0824c2; */
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .contPrincipal .contHeader .title {
+  color: var(--secundario);
+  font-size: 1rem;
+}
+
+.container .contPrincipal .contHeader .desc {
+  color: var(--cuarto);
+  font-size: 1rem;
+}
+
+.container .contPrincipal .contInfo {
+  /* background: #ca1414; */
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.container .contPrincipal .contInfo .contPage {
+  /* background: #cac714; */
+  width: 100%;
+  height: 15%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.container .contPrincipal .contInfo .contContact {
+  background: var(--terciario);
+  width: 100%;
+  height: 25%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.container .contPrincipal .contInfo .contContact .contTitle {
+  /* background: #f77171; */
+  width: 100%;
+  height: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .contPrincipal .contInfo .contContact .contTitle .title {
+  color: var(--secundario);
+  font-size: 1rem;
+}
+
+.container .contPrincipal .contInfo .contContact .contTitle .view {
+  color: var(--cuarto);
+  font-size: .8rem;
+  cursor: pointer;
+}
+
+.container .contPrincipal .contInfo .contContact .contImage {
+  background: #57ee49;
+  width: 100%;
+  height: 65%;
+  display: flex;
+  flex-direction: row;
+}
+
+.contProfile {
+  background: #df0707;
+  width: 2rem;
+  height: 100%;
+}
+
+.container .contPrincipal .contInfo .contContact .contTitle .view:hover {
+  color: var(--primario);
+}
+
+.container .contPrincipal .contInfo .contDestacados {
+  /* background: #0713be; */
+  width: 100%;
+  height: calc(60% - 2rem);
+}
+
+.card {
+  background: var(--terciario);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.card .contIcon {
+  /* background: #0a2be4; */
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .contIcon .icon {
+  background: var(--fondo);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.85rem;
+  color: var(--secundario);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .contText {
+  /* background: #048a40; */
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 0.5rem;
+}
+
+.card .contText .title {
+  color: var(--secundario);
+  font-size: 1rem;
+}
+
+.card .contText .desc {
+  color: var(--cuarto);
+  font-size: 0.7rem;
+}
+
+.container .aside {
+  background: #fff;
+  width: 22%;
+  height: 100%;
+}

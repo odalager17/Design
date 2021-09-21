@@ -1,0 +1,138 @@
+.contMenu {
+  background: var(--terciario);
+  width: 100%;
+  height: 100%;
+  border-radius: .8rem;
+}
+
+.contMenu .menuItems {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+  /* background: #da1e1e; */
+  padding: 0.5rem;
+}
+
+.contMenu .menuItems .menuService {
+  /* background: #e74e4e; */
+  width: 100%;
+  height: 80%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.contMenu .menuItems .menuService::-webkit-scrollbar {
+  display: none;
+}
+
+.menuItems .contOpcion {
+  /* background: #03c24c; */
+  /* margin: 0.6rem 0; */
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease;
+}
+
+.menuItems .contOpcion .opcion {
+  /* background: #33ee1a; */
+  width: 100%;
+  height: 3.2rem;
+  display: flex;
+  align-items: center;
+  font-size: .8rem;
+  /* font-family: sans-serif; */
+  font-weight: bold;
+  color: var(--cuarto);
+  cursor: pointer;
+  padding: 0 0.8rem;
+}
+
+.menuItems .contOpcion .opcion:hover {
+  color: var(--primario);
+}
+
+.menuItems .contOpcion .opcion .txtBtn {
+  margin-left: 0.8rem;
+}
+
+.menuItems .subMenu {
+  /* background: #ee1a1a; */
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.menuItems .subOpcion {
+  /* background: #2f9411; */
+  width: 100%;
+  height: fit-content;
+  display: none;
+}
+
+.menuItems .subOpcion .opcion {
+  height: 2rem;
+}
+
+.menuItems .contOpcion:hover .subOpcion {
+  /* background: #4ef157; */
+  display: flex;
+  flex-direction: column;
+}
+
+.contMenu .menuItems .menuInfo {
+  /* background: #4ee79b; */
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: .8rem;
+  border-bottom: 1px solid var(--fondo);
+}
+
+.contMenu .menuItems .menuInfo .contIcon {
+  /* background: #c51d07; */
+  width: 2rem;
+  height: 2.8rem;
+}
+
+.contMenu .menuItems .menuInfo .contIcon .icon {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+
+.contMenu .menuItems .menuInfo .contText {
+  /* background: #a507c5; */
+  width: calc(100% - 2rem);
+  height: 2.8rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: .8rem;
+}
+
+.contMenu .menuItems .menuInfo .contText .txtPrincipal {
+  color: var(--secundario);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.contMenu .menuItems .menuInfo .contText .txtSecundario {
+  color: var(--cuarto);
+  font-size: .8rem;
+}
+
+.btnMenu {
+  display: none;
+}

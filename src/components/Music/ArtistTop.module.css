@@ -1,0 +1,40 @@
+.container {
+  /* background: #fa1c1c; */
+  width: 50%;
+  height: 100%;
+}
+
+.container .contTitle {
+  /* background: #1e8a03; */
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.container .contTitle .title {
+  color: var(--terciario);
+  font-weight: bold;
+}
+
+.container .contItem {
+  /* background: #0ac7d4; */
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.contImage {
+  /* background: #000; */
+  width: 5.5rem;
+  height: 5.5rem;
+}
+
+.contImage .image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+}
